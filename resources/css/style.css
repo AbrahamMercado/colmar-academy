@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+/* Universal Styles */
+body {
+    padding: 0 24px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Header Styling */
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    padding: 0 24px;
+    width: 100%;
+}
+@media only screen and (min-width: 426px) {
+.header .desktop-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-height: 32px;
+    flex-shrink: 1; 
+}
+.desktop-logo img {
+    max-height: 32px;
+}
+.header .navpane {
+    display: flex;
+    list-style: none;
+}
+.header .navpane li:hover {
+    color: blue;
+}
+.navpane li {
+    margin: 0 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    transition: color 250ms ease-in 90ms;
+}
+#Colmar {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    color: #464646;
+    font-size: 20px;
+}
+#Academy {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    color: darkgray;
+    font-size: 20px;
+}
+.mobile-logo, .on-campus, .online, .sign-in {
+    display: none;
+}
+}
+@media only screen and (max-width: 425px) {
+.desktop-logo, .navpane {
+    display: none;
+}
+}
+
+/* Section 1 */
