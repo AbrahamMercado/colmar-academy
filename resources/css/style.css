@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /* Universal Styles */
 body {
     padding: 0 24px;
     font-family: 'Noto Sans JP', sans-serif;
+    z-index: 1;
 }
 
 /* Header Styling */
@@ -15,9 +18,12 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     z-index: 2;
-    padding: 0 24px;
+    background-color: white;
+    margin: 0 auto;
     width: 100%;
+    padding-right: 48px;
 }
 @media only screen and (min-width: 426px) {
 .header .desktop-logo {
@@ -35,13 +41,14 @@ body {
     list-style: none;
 }
 .header .navpane li:hover {
-    color: blue;
+    color:darkgreen;
 }
 .navpane li {
     margin: 0 16px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
     transition: color 250ms ease-in 90ms;
+    cursor: pointer;
 }
 #Colmar {
     font-family: 'Noto Sans JP', sans-serif;
@@ -66,3 +73,79 @@ body {
 }
 
 /* Section 1 */
+.section1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 64px;
+    background-color: lightgrey;
+}
+
+@media only screen and (min-width: 426px) {
+.banner-img {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: 32px 24px;
+}
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 425px) {
+    .banner-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 32px 24px;
+    }
+    .banner-txt {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 16px;
+    }
+    }
+.banner-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.banner-txt h1 {
+    margin-bottom: 32px;
+    color: #464646;
+    font-size: 45px;
+    font-weight: 800;
+}
+.banner-txt h2 {
+    margin-bottom: 32px;
+    color: #464646;
+    font-size: 25px;
+    font-weight: 500;
+}
+.start-button {
+    background-color: #464646;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    animation: pop 0.3s linear 1;
+    border-radius: 10px;
+    transition: background-color 450ms linear 90ms;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+.start-button:hover {
+    background-color: darkgreen;
+}
+
+ .start-button span {
+     color: white;
+     padding: 8px 0;
+     font-size: 25px;
+ }
