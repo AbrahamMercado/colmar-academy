@@ -255,4 +255,30 @@ body {
     #readmore:hover {
         font-weight: 500;
     }
+    .right-tile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex: wrap;
+        justify-content: space-between;
+        margin-top: 16px;
+        transition: background-color 250ms ease-in 0;
+    }
+    .right-tile:hover {
+        background-color: lightgrey;
+    }
+    .right-tile .rt-img {
+        width: 35%;
+        height: auto;
+        overflow: hidden;
+        margin: 16px;
+    }
+    .right-tile .rt-txt {
+        width: 65%;
+        padding: 16px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
  }
