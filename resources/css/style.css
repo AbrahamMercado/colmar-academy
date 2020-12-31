@@ -47,7 +47,7 @@ body {
     margin: 0 16px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
-    transition: color 250ms ease-in 90ms;
+    transition: color 250ms ease-in 0;
     cursor: pointer;
 }
 #Colmar {
@@ -148,4 +148,111 @@ body {
      color: white;
      padding: 8px 0;
      font-size: 25px;
+ }
+
+ /* Section 2 */
+ @media only screen and (min-width: 426px) {
+    .section2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .main-left {
+        width: 60%;
+        padding-right: 24px;
+        padding-top: 32px;
+    }
+    .main-left .img-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0px 24px 32px 0px;
+    }
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .main-left .main-left-txt {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-left-txt h1 {
+        margin-bottom: 24px;
+        color: #464646;
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .main-left-txt h4 {
+        margin-bottom: 32px;
+        color: #464646;
+        font-size: 20px;
+        font-weight: 250;
+        font-style: italic;
+    }
+    .main-left-txt span {
+        margin-bottom: 32px;
+        color: #464646;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .main-right {
+        width: 40%;
+    }
+    .right-tile-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex: wrap;
+        justify-content: space-between;
+        margin-top: 16px;
+        transition: background-color 250ms ease-in 0;
+    }
+    .right-tile-1:hover {
+        background-color: lightgrey;
+    }
+    .right-tile-1 .rt-img {
+        width: 35%;
+        height: auto;
+        overflow: hidden;
+        margin: 16px;
+    }
+    .rt-img .mobile-ort {
+        display: none;
+    }
+    .rt-img .desktop-ort {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .right-tile-1 .rt-txt {
+        width: 65%;
+        padding: 16px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rt-txt .rt-txt-header {
+        font-size: 24px;
+        color: #464646;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .rt-txt .rt-txt-info {
+        font-size: 20px;
+        color: #464646;
+        font-weight: 250;
+        margin-bottom: 8px;
+    }
+    #readmore {
+        font-size: 20px;
+        color: blue;
+        font-weight: 250;
+        cursor: pointer;
+        transition: font-weight 250ms ease-in 0;
+    }
+    #readmore:hover {
+        font-weight: 500;
+    }
  }
