@@ -327,3 +327,65 @@ body {
     cursor: pointer;
     transition: font-weight 250ms ease-in 0;
 }
+
+/* Section 3 */
+@media only screen and (min-width: 426px) {
+    .section3 {
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section3 .headerbox {
+        width: 100%;
+        margin: 32px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .headerbox h1 {
+        color: #464646;
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .main-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 72px; 
+        justify-content: space-around;
+    }
+    .coursebox {
+        max-width: 30%;
+        margin-bottom: 32px;
+    }
+    .coursebox .coursebox-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .coursebox-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .coursebox-txt {
+        background-color: white;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 50%;
+    }
+    .coursebox-txt h2 {
+        font-size: 24px;
+        color: #464646;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .coursebox-txt h3 {
+        font-size: 20px;
+        color: #464646;
+        font-weight: 250;
+    }
+}
