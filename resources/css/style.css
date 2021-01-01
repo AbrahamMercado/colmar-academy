@@ -233,25 +233,7 @@ body {
         flex-direction: column;
         justify-content: center;
     }
-    .rt-txt .rt-txt-header {
-        font-size: 24px;
-        color: #464646;
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-    .rt-txt .rt-txt-info {
-        font-size: 20px;
-        color: #464646;
-        font-weight: 250;
-        margin-bottom: 8px;
-    }
-    #readmore {
-        font-size: 20px;
-        color: blue;
-        font-weight: 250;
-        cursor: pointer;
-        transition: font-weight 250ms ease-in 0;
-    }
+    
     #readmore:hover {
         font-weight: 500;
     }
@@ -282,3 +264,66 @@ body {
         justify-content: center;
     }
  }
+
+ /* Section 2 mobile rules */
+ 
+ @media only screen and (max-width: 425px) {
+    .main-left {
+         display: none;
+     }
+    .main-right {
+         width: 100%;
+         margin-top: 64px;
+         margin-bottom: 64px;
+     }
+    .desktop-ort {
+        display: none;
+    }
+    .rt-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .rt-img .mobile-ort {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .right-tile-1 .rt-txt {
+        width: 100%;
+        padding: 16px 0px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-tile .rt-txt {
+        width: 100%;
+        padding: 16px 0px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*Section 2 universal rules */
+.rt-txt .rt-txt-header {
+    font-size: 24px;
+    color: #464646;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.rt-txt .rt-txt-info {
+    font-size: 20px;
+    color: #464646;
+    font-weight: 250;
+    margin-bottom: 8px;
+}
+#readmore {
+    font-size: 20px;
+    color: blue;
+    font-weight: 250;
+    cursor: pointer;
+    transition: font-weight 250ms ease-in 0;
+}
