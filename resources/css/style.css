@@ -356,6 +356,7 @@ body {
     .coursebox {
         max-width: 30%;
         margin-bottom: 32px;
+        overflow: hidden;
     }
     .coursebox .coursebox-img {
         width: 100%;
@@ -372,20 +373,23 @@ body {
         padding-top: 16px;
         padding-bottom: 24px;
         padding-left: 16px;
+        padding-right: 8px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        min-height: 50%;
-    }
+        width: 100%;
+        height: 100%;
+        }
     .coursebox-txt h2 {
-        font-size: 24px;
+        font-size: 1.5em;
         color: #464646;
         font-weight: 700;
         margin-bottom: 8px;
     }
     .coursebox-txt h3 {
-        font-size: 20px;
+        font-size: 1.25em;
         color: #464646;
         font-weight: 250;
+        margin-bottom: 8px;
     }
 }
