@@ -342,11 +342,7 @@ body {
         display: flex;
         justify-content: center;
     }
-    .headerbox h1 {
-        color: #464646;
-        font-size: 45px;
-        font-weight: 800;
-    }
+    
     .main-box {
         display: flex;
         flex-wrap: wrap;
@@ -354,7 +350,7 @@ body {
         justify-content: space-around;
     }
     .coursebox {
-        max-width: 30%;
+        width: 30%;
         margin-bottom: 32px;
         overflow: hidden;
     }
@@ -378,7 +374,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        height: 100%;
+        min-height: 55%;
         }
     .coursebox-txt h2 {
         font-size: 1.5em;
@@ -391,5 +387,48 @@ body {
         color: #464646;
         font-weight: 250;
         margin-bottom: 8px;
+    }
+}
+
+/*  Universal Rules */
+.headerbox h1 {
+    color: #464646;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+/* Section 3 mobile rules */
+@media only screen and (max-width: 425px) {
+    .section3 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: thin solid lightgrey;
+        border-bottom: thin solid lightgrey;
+    }
+    .section3 .headerbox {
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .coursebox-img {
+        display: none;
+    }
+    .coursebox-txt h3 {
+        display: none;
+    }
+    .coursebox-txt {
+        background-color: lightgrey;
+        padding: 16px 16px 24px 16px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+    }
+    .coursebox-txt h2 {
+        font-size: 1.5em;
+        color: #464646;
+        font-weight: 700;
     }
 }
